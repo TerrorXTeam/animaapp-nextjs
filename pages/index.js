@@ -1,65 +1,76 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
-export default function Home() {
+function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div className="hero">
+      <h1 className="h1 ubuntu-normal-deep-space-sparkle-66px">Намери своя мечтан имот още днес</h1>
+      <div className="section">
+        <div className="flex-row-1">
+          <div className="prodajbi valign-text-middle ubuntu-bold-river-bed-12px">ПРОДАЖБИ</div>
+          <div className="naemi ubuntu-normal-river-bed-12px">НАЕМИ</div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+        <div className="flex-row">
+          <div className="naseleno-mqsto">
+            <div className="overlap-group7">
+              <div className="placeholder-naselen ubuntu-normal-tiara-14px">Населено място...</div>
+            </div>
+          </div>
+          <div className="category-field">
+            <div className="overlap-group6">
+              <div className="placeholder-kategori ubuntu-normal-tiara-14px">Категория</div>
+              <img
+                className="icon-kategoriq"
+                src="https://anima-uploads.s3.amazonaws.com/projects/6076ea6fe8a3cd8478d1dcfa/releases/607c0699a68d55c181607739/img/icon-cena@2x.svg"
+              />
+            </div>
+          </div>
+          <div className="field-cena">
+            <div className="overlap-group5">
+              <div className="placeholder-cena ubuntu-normal-tiara-14px">Цена</div>
+              <img
+                className="icon-cena"
+                src="https://anima-uploads.s3.amazonaws.com/projects/6076ea6fe8a3cd8478d1dcfa/releases/607c0699a68d55c181607739/img/icon-cena@2x.svg"
+              />
+            </div>
+          </div>
+          <div className="button">
+            <div className="overlap-group4">
+              <div className="textlabel ubuntu-normal-white-12px">ТЪРСИ</div>
+            </div>
+          </div>
+        </div>
+        <div className="more-search valign-text-middle ubuntu-light-river-bed-12px">Разшиерено търсене</div>
+        <div className="flex-row-2">
+          <div className="tag-1">
+            <div className="overlap-group3">
+              <div className="placeholder-jilishtn ubuntu-normal-river-bed-12px">ЖИЛИЩНИ</div>
+            </div>
+          </div>
+          <div className="tag-">
+            <div className="overlap-group2">
+              <div className="placeholder-2 ubuntu-normal-river-bed-12px">ТЪРГОВСКИ</div>
+            </div>
+          </div>
+          <div className="tag-">
+            <div className="overlap-group1">
+              <div className="placeholder ubuntu-normal-river-bed-12px">НОВО СТРОИТЕЛСТВО</div>
+            </div>
+          </div>
+          <div className="tag-">
+            <div className="overlap-group">
+              <div className="placeholder-1 ubuntu-normal-river-bed-12px">КРЕДИТИ</div>
+            </div>
+          </div>
+        </div>
+        <div className="icon-vij-oshte">
+          <img
+            className="icon"
+            src="https://anima-uploads.s3.amazonaws.com/projects/6076ea6fe8a3cd8478d1dcfa/releases/607c0699a68d55c181607739/img/icon@2x.svg"
+          />
+          <div className="placeholder-vij-osht lato-normal-celeste-12px">Виж още</div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
+
+export default Home;

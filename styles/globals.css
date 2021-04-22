@@ -1,16 +1,341 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+:root {
+  --cararra: rgba(235, 234, 234, 1);
+  --celeste: rgba(203, 203, 203, 1);
+  --deep-space-sparkle: rgba(79, 92, 104, 1);
+  --mist-gray: rgba(196, 196, 196, 1);
+  --river-bed: rgba(66, 75, 90, 1);
+  --tiara: rgba(194, 209, 217, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-s: 14px;
+  --font-size-xs: 12px;
+  --font-size-xxxl: 66px;
+
+  --font-family-lato: "Lato", Helvetica;
+  --font-family-ubuntu: "Ubuntu", Helvetica;
+}
+.ubuntu-normal-river-bed-12px {
+  color: var(--river-bed);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+}
+.ubuntu-normal-tiara-14px {
+  color: var(--tiara);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+.ubuntu-normal-deep-space-sparkle-66px {
+  color: var(--deep-space-sparkle);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+.ubuntu-bold-river-bed-12px {
+  color: var(--river-bed);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 700;
+}
+.ubuntu-normal-white-12px {
+  color: var(--white);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+}
+.ubuntu-light-river-bed-12px {
+  color: var(--river-bed);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 300;
+}
+.lato-normal-celeste-12px {
+  color: var(--celeste);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:400|Ubuntu:400,300,700|Barlow:800");
 * {
   box-sizing: border-box;
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.button {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 16px;
+  min-width: 167px;
+}
+.category-field {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 20px;
+  min-width: 172px;
+}
+.field-cena {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 8px;
+  min-width: 122px;
+}
+.flex-row {
+  align-items: flex-start;
+  display: flex;
+  min-width: 142px;
+}
+.flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 17px;
+  min-width: 758px;
+}
+.flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 3px;
+  margin-top: 27px;
+  min-width: 722px;
+}
+.h1 {
+  align-self: center;
+  letter-spacing: 0.00px;
+  margin-left: 2.0px;
+  min-height: 152px;
+  text-align: center;
+  width: 752px;
+}
+.hero {
+  align-items: flex-end;
+  background-color: var(--cararra);
+  display: flex;
+  flex-direction: column;
+  min-height: 687px;
+  padding: 73px 336px;
+  width: 1440px;
+}
+.icon {
+  height: 7px;
+  margin-right: 2.0px;
+  width: 10px;
+}
+.icon-cena {
+  height: 5px;
+  margin-left: 52px;
+  margin-top: 1.0px;
+  width: 8px;
+}
+.icon-kategoriq {
+  height: 5px;
+  margin-left: 67px;
+  margin-top: 1.0px;
+  width: 8px;
+}
+.icon-vij-oshte {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 4.0px;
+  margin-top: 101px;
+  min-height: 40px;
+  width: 56px;
+}
+.more-search {
+  height: 14px;
+  letter-spacing: 0.00px;
+  margin-top: 7px;
+  min-height: 14px;
+  text-align: center;
+  width: 120px;
+}
+.naemi {
+  letter-spacing: 0.00px;
+  margin-left: 18px;
+  min-height: 14px;
+  min-width: 45px;
+  text-align: center;
+}
+.naseleno-mqsto {
+  align-items: flex-start;
+  display: flex;
+  min-width: 253px;
+}
+.overlap-group {
+  align-items: flex-end;
+  background-color: var(--mist-gray);
+  border-radius: 4px;
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  min-width: 165px;
+  padding: 12.5px 53px;
+}
+.overlap-group1 {
+  align-items: flex-end;
+  background-color: var(--mist-gray);
+  border-radius: 4px;
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  min-width: 165px;
+  padding: 12.5px 15px;
+}
+.overlap-group2 {
+  align-items: flex-end;
+  background-color: var(--mist-gray);
+  border-radius: 4px;
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  min-width: 165px;
+  padding: 12.5px 46px;
+}
+.overlap-group3 {
+  align-items: flex-end;
+  background-color: var(--mist-gray);
+  border-radius: 4px;
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  min-width: 165px;
+  padding: 12.5px 47px;
+}
+.overlap-group4 {
+  align-items: flex-end;
+  background-color: var(--river-bed);
+  border-radius: 4px;
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  min-width: 165px;
+  padding: 12.5px 61px;
+}
+.overlap-group5 {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 4px;
+  display: flex;
+  height: 40px;
+  min-width: 120px;
+  padding: 0 8px;
+}
+.overlap-group6 {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 4px;
+  display: flex;
+  height: 40px;
+  min-width: 170px;
+  padding: 0 8px;
+}
+.overlap-group7 {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 4px;
+  display: flex;
+  height: 40px;
+  min-width: 251px;
+  padding: 0 7.6px;
+}
+.placeholder {
+  letter-spacing: 0.00px;
+  min-height: 14px;
+  min-width: 134px;
+  text-align: center;
+}
+.placeholder-1 {
+  letter-spacing: 0.00px;
+  min-height: 14px;
+  min-width: 57px;
+  text-align: center;
+}
+.placeholder-2 {
+  letter-spacing: 0.00px;
+  min-height: 14px;
+  min-width: 72px;
+  text-align: center;
+}
+.placeholder-cena {
+  letter-spacing: 0.00px;
+  line-height: 18px;
+  min-height: 18px;
+  min-width: 36px;
+  white-space: nowrap;
+}
+.placeholder-jilishtn {
+  letter-spacing: 0.00px;
+  min-height: 14px;
+  min-width: 69px;
+  text-align: center;
+}
+.placeholder-kategori {
+  letter-spacing: 0.00px;
+  line-height: 18px;
+  min-height: 18px;
+  min-width: 71px;
+  white-space: nowrap;
+}
+.placeholder-naselen {
+  letter-spacing: 0.00px;
+  line-height: 18px;
+  min-height: 18px;
+  white-space: nowrap;
+  width: 229px;
+}
+.placeholder-vij-osht {
+  letter-spacing: 0.50px;
+  line-height: 15px;
+  margin-top: 18px;
+  min-height: 15px;
+  min-width: 56px;
+  text-align: center;
+  white-space: nowrap;
+}
+.prodajbi {
+  height: 14px;
+  letter-spacing: 0.00px;
+  min-height: 14px;
+  text-align: center;
+  text-decoration: underline;
+  width: 79px;
+}
+.section {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 76px;
+  min-height: 301px;
+  width: 762px;
+}
+.tag- {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 18px;
+  min-width: 167px;
+}
+.tag-1 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 167px;
+}
+.textlabel {
+  letter-spacing: 0.00px;
+  min-height: 14px;
+  min-width: 42px;
+  text-align: center;
 }
